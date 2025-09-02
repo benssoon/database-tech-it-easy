@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS products CASCADE;
+
+DROP TABLE IF EXISTS televisions CASCADE;
+
+DROP TABLE IF EXISTS brackets CASCADE;
+
+DROP TABLE IF EXISTS bracket_television_compatibilities;
+
+DROP TABLE IF EXISTS ci_modules;
+
+DROP TABLE IF EXISTS remotes;
