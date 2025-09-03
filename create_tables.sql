@@ -195,3 +195,5 @@ ADD CONSTRAINT compatible_tv_unique UNIQUE(fk_compatible_tv);
 ALTER TABLE remotes
 ALTER COLUMN fk_compatible_tv SET NOT NULL;
 
+ALTER TABLE televisions
+ALTER COLUMN fk_compatible_ci_module SET NOT NULL;
