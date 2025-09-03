@@ -279,6 +279,10 @@ SELECT brackets.bracket_id, televisions.television_id
 FROM brackets
 JOIN televisions ON brackets.format_inches = televisions.format_inches;
 
+DELETE
+FROM bracket_television_compatibilities
+WHERE bracket_television_id > 4;
+
 
 SELECT * FROM products ORDER BY type_id;
 SELECT * FROM televisions ORDER BY television_id;
