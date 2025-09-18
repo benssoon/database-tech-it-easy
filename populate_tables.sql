@@ -290,3 +290,11 @@ SELECT * FROM remotes ORDER BY remote_id;
 SELECT * FROM ci_modules ORDER BY ci_module_id;
 SELECT * FROM brackets ORDER BY bracket_id;
 SELECT * FROM bracket_television_compatibilities ORDER BY bracket_television_id;
+SELECT
+	t.name,
+	b.name
+FROM televisions t
+JOIN bracket_television_compatibilities j
+	ON t.television_id = j.fk_television
+JOIN brackets b
+	ON b.bracket_id = j.fk_bracket;
